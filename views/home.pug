@@ -1,0 +1,45 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+
+block style 
+  style
+      include   ../static/style.css
+
+block content
+    section#introSection
+        div Welcome to Vineet's Bhangra Acedemy
+        div.small Eat Sleep Bhangra Repeat
+    section#missionSection 
+        h2 Our Mission
+        div.card
+          h3 Bhangra Perfection
+          div.card-box 
+              div.card-img 
+                   img(src="/static/img/bhangra.jpeg")
+              div.card-content 
+                 p The Best Bhangra Acedemy in Dehradun 
+        div.card
+          h3 Dance the Way You Like
+          div.card-box 
+              div.card-img 
+                   img(src="/static/img/gidha.jpeg")
+              div.card-content 
+                 p The Best Bhangra Acedemy in Dehradun 
+        div.card
+          h3 Expert Teaching 
+          div.card-box 
+              div.card-img 
+                   img(src="/static/img/kanchi.jpeg")
+              div.card-content 
+                 p The Best Bhangra Acedemy in Dehradun       
+    section#sponsorsSection 
+       h2 Our Sponsores
+       div#sponsors
+           img(src="/static/img/apple.jpeg", alt="Sponsor image" class="sponsors-img")
+           img(src="/static/img/hp.jpeg", alt="Sponsor image" class="sponsors-img")
+           img(src="/static/img/micro.jpeg", alt="Sponsor image" class="sponsors-img")
+           img(src="/static/img/sky.jpeg", alt="Sponsor image" class="sponsors-img")
+    

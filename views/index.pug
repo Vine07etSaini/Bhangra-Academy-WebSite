@@ -1,0 +1,55 @@
+doctype html
+html 
+  head 
+    title Vineet's Bhangra Acedemy
+    style
+      include   ../static/style.css
+  body 
+    nav#navbar
+        ul 
+            div#logo
+               img(src="./static/img/logo.jpg", alt="VBA") 
+               | VBA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class info]
+            li #[a(href="/") Contact Us]
+    section#introSection
+       div Welcome to Vineet's Bhangra Acedemy
+       div.small Eat Sleep Bhangra Repeat
+    section#missionSection 
+       h2 Our Mission
+       div.card
+          h3 Bhangra Perfection
+          div.card-box 
+              div.card-img 
+                   img(src="/static/img/bhangra.jpeg")
+              div.card-content 
+                 p The Best Bhangra Acedemy in Dehradun 
+       div.card
+          h3 Dance the Way You Like
+          div.card-box 
+              div.card-img 
+                   img(src="/static/img/gidha.jpeg")
+              div.card-content 
+                 p The Best Bhangra Acedemy in Dehradun 
+       div.card
+          h3 Expert Teaching 
+          div.card-box 
+              div.card-img 
+                   img(src="/static/img/kanchi.jpeg")
+              div.card-content 
+                 p The Best Bhangra Acedemy in Dehradun       
+    section#sponsorsSection 
+       h2 Our Sponsores
+       div#sponsors
+           img(src="/static/img/apple.jpeg", alt="Sponsor image" class="sponsors-img")
+           img(src="/static/img/hp.jpeg", alt="Sponsor image" class="sponsors-img")
+           img(src="/static/img/micro.jpeg", alt="Sponsor image" class="sponsors-img")
+           img(src="/static/img/sky.jpeg", alt="Sponsor image" class="sponsors-img")
+    
+    footer#footer 
+     | Copyright © 2023 VineetBhangraAcedemy.com | All right reserved
+    script 
+        include    ../static/index.js
